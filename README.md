@@ -20,7 +20,7 @@ cmsRun DQM/Integration/python/clients/hlt_dqm_sourceclient-live_cfg.py inputFile
 # once both files are available run the plotting script
 ```
 
-## Recipe to run on full statistic of /EphemeralHLTPhysics0/Run2024H-v1/RAW
+## Recipe to run on full statistic of `/EphemeralHLTPhysics0/Run2024H-v1/RAW`
 ```
 # optional, to re-generate the configuration
 ./prepareConfiguration.sh
