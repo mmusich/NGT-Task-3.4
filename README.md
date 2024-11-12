@@ -20,7 +20,7 @@ cmsRun DQM/Integration/python/clients/hlt_dqm_sourceclient-live_cfg.py inputFile
 # once both files are available run the plotting script
 ```
 
-## Recipe to run on full statistic of /EphemeralHLTPhysics0/Run2024H-v1/RAW
+## Recipe to run on full statistic of `/EphemeralHLTPhysics0/Run2024H-v1/RAW`
 ```
 # optional, to re-generate the configuration
 ./prepareConfiguration.sh
@@ -28,3 +28,9 @@ python3 submitAllTemplatedJobs.py -j ReHLT_HLTGT -i configHLT.ini --submit
 python3 submitAllTemplatedJobs.py -j ReHLT_PromptGT -i configPrompt.ini --submit
 ```
 
+## Recipe to run the DQM hlt client
+```
+cd $CMSSW_BASE/src
+cp -pr NGT-Task-3.4/dmqHarvesting/submit* .
+./submitAll.sh
+```
