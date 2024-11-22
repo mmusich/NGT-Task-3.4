@@ -28,6 +28,7 @@ process.hltOutputMinimal.outputCommands = [
     'keep *_hltIter0PFlowTrackSelectionHighPurity_*_*',
     'keep *_hltL3NoFiltersNoVtxMuonCandidates_*_*',
     'keep *_hltMergedTracks_*_*',
+    'keep *_hltPFMuonMerging_*_*',
     'keep *_hltOnlineBeamSpot_*_*',
     'keep *_hltPixelTracks_*_*',
     'keep *_hltPixelVertices_*_*',
