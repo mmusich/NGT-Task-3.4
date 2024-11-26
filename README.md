@@ -13,6 +13,7 @@ git clone git@github.com:mmusich/NGT-Task-3.4.git
 cd NGT-Task-3.4
 ./testOfflineGT.sh
 cd ..
+mkdir -p upload
 cmsRun DQM/Integration/python/clients/hlt_dqm_sourceclient-live_cfg.py inputFiles=NGT-Task-3.4/output.root
 
 # change the GT in the script to the HLT one (141X_dataRun3_HLT_v1), rinse and repeat
