@@ -4,7 +4,7 @@
 FILEINPUT_TEMPLATE=$(tr -d '\r' < fileList.txt | tr '\n' ',' | sed 's/,$//')
 
 hltGetConfiguration /dev/CMSSW_14_1_0/GRun \
-   --globaltag 141X_dataRun3_Prompt_v3 \
+   --globaltag 141X_dataRun3_HLT_v2 \
    --data \
    --unprescale \
    --output minimal \
@@ -54,4 +54,4 @@ process.load('FWCore.MessageLogger.MessageLogger_cfi')
 @EOF
 
 cmsRun hltData.py >& hltData.log
-mv output.root output_Prompt.root 
+mv output.root output_HLT.root 
