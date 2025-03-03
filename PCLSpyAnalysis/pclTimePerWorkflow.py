@@ -48,8 +48,8 @@ bins = np.arange(0, 60.5, 0.5)
 # Generate plots per workflow
 for workflow, data in diff_df.groupby("workflow"):
     # Compute statistics
-    mean_diff = diff_df["time_difference"].mean()
-    rms_diff = np.sqrt(((diff_df["time_difference"] - mean_diff) ** 2).mean())
+    mean_diff = data["time_difference"].mean()
+    rms_diff = np.sqrt(((data["time_difference"] - mean_diff) ** 2).mean())
 
     plt.figure(figsize=(10, 5))
     plt.hist(data["time_difference"], bins=bins, edgecolor='black', alpha=0.7)
